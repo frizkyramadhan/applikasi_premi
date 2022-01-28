@@ -6,6 +6,7 @@ use App\Models\Unit;
 use App\Models\UnitModel;
 use App\Models\Project;
 use App\Imports\UnitImport;
+use App\Exports\UnitExport;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -157,7 +158,7 @@ class UnitController extends Controller
 
     public function export()
     {
-        return Excel::download(new UnitModelsExport, 'UnitModels.xlsx');
+        return Excel::download(new UnitExport, 'Units.xlsx');
     }
 
     public function index_data()

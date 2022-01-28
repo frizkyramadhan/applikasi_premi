@@ -45,7 +45,8 @@
             <a href="{{ url('unit_models/import') }}" class="btn btn-primary btn-sm">
               <i class="fa fa-upload"></i> Import
             </a>
-            <a href="{{ route('export') }}" class="btn btn-warning btn-sm"><i class="fa fa-download"></i> Export</a>
+            <a href="{{ url('unit_models/export') }}" class="btn btn-warning btn-sm"><i class="fa fa-download"></i>
+              Export</a>
           </div>
         </div>
         <div class="card-body table-responsive">

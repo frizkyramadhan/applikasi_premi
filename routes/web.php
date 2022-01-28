@@ -50,9 +50,10 @@ Route::middleware('auth')->group(function(){
     Route::get('unit_models/export', [UnitModelController::class, 'export'])->name('export');
     Route::post('unit_models/importProcess', [UnitModelController::class, 'importProcess']);
     Route::resource('unit_models', UnitModelController::class);
-
+    
     Route::get('units/data', [UnitController::class, 'index_data'])->name('units.index.data');
     Route::get('units/import', [UnitController::class, 'import']);
+    Route::get('units/export', [UnitController::class, 'export'])->name('export');
     Route::post('units/importProcess', [UnitController::class, 'importProcess']);
     Route::resource('units', UnitController::class);
 
