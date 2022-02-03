@@ -231,7 +231,7 @@ class WarningController extends Controller
                 return $warnings->warning_category->warning_name;
             })
             ->addColumn('warning_date', function($warnings){
-                return $warnings->warning_date;
+                return date('d-M-Y', strtotime($warnings->warning_date));
             })
             ->addColumn('action', 'warning.action')
             ->rawColumns(['action'])

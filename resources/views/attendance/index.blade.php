@@ -202,6 +202,7 @@
               d.search = $('input[type="search"]').val()
           }
         },
+		length: 10,
         columns: [{
             data: 'DT_RowIndex',
             orderable: false,
